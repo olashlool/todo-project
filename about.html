@@ -5,50 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <link rel="stylesheet" href="style/about.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/todo.jpg" width="100px" alt="ToDo logo">
-            <h1>To-Do List</h1>    
+    <header class="header">
+        <div>
+            <img class="logo" src="assets/logo.png" alt="">
         </div>
         <nav>
-            <ul>
-                <a href="index.html"><li>HOME</li></a>
-                <li>ABOUT</li>
+            <ul class="nav_link">
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="##">About Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <img src="assets/image.png" alt="OLA" width="200px">
-            <i><strong style="font-size: 40px;">Ola M AL-Shlool</strong> <br/></i>
-            <p style="font-size: 30px;">Engineering</p>
-            <p style="border: solid rgb(68, 30, 51) 2px; width: 350px; padding: 10px 20px;" >About me: <br/> I am a Junior Developer. I graduated from the JUST in 2021 with a Bachelor's Degree in Network Engineering and Security.</p>
-            <a target ="_blank" href="https://www.facebook.com/olashlool58/"><img src="assets/facebook.png" width="40px"></a>
-            <a target ="_blank" href="mailto:olashlool94@bmail.com"><img src="assets/gmail.png" width="40px"></a>
-            <a target ="_blank" href="https://www.instagram.com/p/CZmamMzLliH4c11tOk4dnuNnQSTRKI1SLeyspw0/"><img src="assets/insta.png" width="40px"></a>
-            <a target ="_blank" href="https://www.linkedin.com/in/ola-m-al-shlool-6aa548222/"><img src="assets/linkin.png" width="40px"></a>
-            </section>
-            <section>
+            <img class="ola" src="assets/image1.png" alt="Ola M AL-Shlool">
+            <div class="aboutme">
+                <h1 style="color: black;">Ola M AL-Shlool</h1>
+                <h3>Engineering</h3>
+                <p class="overview">I am a Junior Developer. I graduated from the JUST in 2021 with a Bachelor's Degree in Network Engineering and Security.</p>
+            </div>
+        </section>
+        <section class="cotactme">
+            <h1 style="font-size: 80px;">Contact Me</h1>
+            <div>
                 <form action="">
-                    <label for="">Name</label>
-                    <input type="text">
-                    <label for="">Email</label>
-                    <input type="email"> <br/> <br/>
-                    <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="3" placeholder="write massage..."></textarea> <br/>
-                    <input type="submit">
-                    <input type="reset">
+                    <div class="inform">
+                        <label for="">Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="inform">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="inform">
+                        <label for="">Phone</label>
+                        <input type="tel">
+                    </div>
+                    <div class="inform">
+                        <label class="msg" for="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div>
+                        <input class="btn" type="submit" value="Send">
+                    </div>
+                    </div>
                 </form>
-            </section>
+                
+            </div>
+        </section>
     </main>
-    <br/>
     <footer>
-        <a target ="_blank" href="##"><img src="assets/facebook.png" title="Facebook" width="40px"></a>
-        <a target ="_blank" href="##"><img src="assets/gmail.png" title="Gmail" width="40px"></a>
-        <a target ="_blank" href="##"><img src="assets/github.png" title="Github" width="40px"></a>
-        <p>Copyright &copy; 2022 Ola M AL-Shlool, All rights reserved.</p>
+        <p>&copy; 2022 ASAC, All righ reversed</p>
     </footer>
 </body>
 </html>
