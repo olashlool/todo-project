@@ -13,21 +13,20 @@ while(true){
     }
 }
 
-
-let message = prompt("Do you want to skip the welcoming message ?");
-    if(message === "Yes" || message === "yes" )
-    {
+let message;
+    if (confirm("Do you want to skip the welcoming message ?") == true) {
         alert("Good Buy");
-    }else if (message === "No" || message === "no" )
-    {
+    } else {
         if (gender === "Female" || gender === "female")
         {
-            alert(`Hello Ms ${person} `)
+                alert(`Hello Ms ${person} `)
         }else if (gender === "Male" || gender === "male"){
             alert(`Hello Mr ${person} `)
         }else{
             alert(`Hello ${person} `)
         }
     }
+
+
 
 
