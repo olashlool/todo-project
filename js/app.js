@@ -27,6 +27,37 @@ let message;
         }
     }
 
+let answersArray= [];
 
+function questionYesNo(question){
+    let answer;
+    for (let i =0 ; i < question.length; i++){
+        answer = Answer(prompt(question[i]));
+    }
+    let print = printArray(answer);
+}
+function Answer(answerUser){
+    answerUser = answerUser.toLowerCase();
+    switch(answerUser){
+        case 'yes':
+            answersArray.push("Yes");
+            break;
+        case 'no' :
+            answersArray.push("No");
+            break;
+        case '' :
+            answersArray.push("Invalid");
+            break;
+        default:
+            break;
+    }
+    return answersArray;
+}
+function printArray(arrAnswerUser){
+    for (let i =0; i< arrAnswerUser.length; i++)
+    {
+        console.log(`The element of index ${i} => ${arrAnswerUser[i]}`);
+    }
+}
 
-
+questionYesNo(["Q1 : Is he/she busy?" , "Q2 : Would you like to play tennis with me later?","Do you know Amr Diab?"]);
